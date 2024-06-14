@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <Header title="Todo App"/>
+        <Header title="Todo App" />
         <Tasks :tasks="tasks" />
     </div>
 </template>
