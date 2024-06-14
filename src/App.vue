@@ -7,10 +7,43 @@
 <script>
     import Header from './components/Header.vue'
     export default {
-        name: 'App',
-        components: {
-            Header
-        },
+      name: 'App',
+      components: {
+          Header
+      },
+      data() {
+        return {
+          tasks:[]
+        }
+      },
+      created() {
+        this.tasks = [
+          {
+            id: 1,
+            text: 'Appointment',
+            day: 'June 15th at 2:30pm',
+            reminder: true,
+          },
+          {
+            id: 2,
+            text: 'zoom meeting',
+            day: 'June 19th at 11:30am',
+            reminder: false,
+          },
+          {
+            id: 3,
+            text: 'Church',
+            day: 'June 22nd at 4:30pm',
+            reminder: true,
+          },
+          {
+            id: 4,
+            text: 'Gym',
+            day: 'June 23rd at 5:00pm',
+            reminder: false,
+          },
+        ]
+      }
     }
 </script>
 
